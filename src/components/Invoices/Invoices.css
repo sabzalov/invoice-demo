@@ -1,0 +1,63 @@
+.invoices {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.invoice-line {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.invoice-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.invoice-row > * {
+    margin-right: 10px;
+    flex: 1 1 auto;
+}
+
+.invoice-row > *:last-child {
+    margin-right: 0;
+}
+
+.invoice-row .total {
+    text-align: right;
+    width: 100px;
+    flex: 0 0 auto;
+}
+
+.invoice-row .delete {
+    margin-left: 10px;
+}
+
+.titles {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-row {
+        flex-wrap: wrap;
+    }
+    .invoice-row .name {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .titles {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invoice-row > * {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

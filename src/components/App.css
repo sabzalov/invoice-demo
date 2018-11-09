@@ -1,0 +1,17 @@
+.container {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.invoices-contaienr {
+    width: 100%;
+}
+
+.total-container {
+    padding-top: 40px;
+}
